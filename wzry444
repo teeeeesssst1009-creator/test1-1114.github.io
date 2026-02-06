@@ -1,0 +1,47 @@
+---
+layout: post
+title: "《JavaScript 十年》推荐语"
+author: "Hux"
+header-style: text
+catalog: true
+tags:
+  - Web
+  - JavaScript
+---
+
+---
+layout: post
+title: "王者荣耀｜澜的技能机制与爆发逻辑分析"
+author: "123"
+header-style: text
+catalog: true
+tags:
+  - 王者荣耀
+  - 英雄解析
+  - 游戏机制
+---
+## 一、英雄定位
+澜是一个高机动性的打野刺客，核心优势在于：
+- 连续位移
+- 对残血目标的高额伤害
+- 快速收割能力
+
+---
+
+## 二、技能机制拆解
+
+### 被动技能
+当目标生命值低于一定比例时，澜的伤害会明显提升。  
+👉 **这是典型的“阈值触发机制”**，类似程序中的 `if (hp < 30%) { damage++ }`
+
+---
+
+### 一技能：高速位移
+- 进入河道速度提升
+- 适合绕后与追击
+
+技术类比：
+```js
+if (inRiver) {
+  speed *= 1.5
+}
